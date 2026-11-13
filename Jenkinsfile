@@ -22,7 +22,7 @@ pipeline {
 
         stage("Start new container") {
             steps {
-                bat "docker run -d --name jenkins-practice -p 8080:80 jenkins-practice:${BUILD_NUMBER}"
+                bat "docker run -d --name jenkins-practice -p 80:80 jenkins-practice:${BUILD_NUMBER}"
             }
         }
 
